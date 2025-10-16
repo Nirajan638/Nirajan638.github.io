@@ -1,1 +1,247 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Typography
+------------------------------ */
+h1, h2, h3 {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* For captions or smaller notes */
+small, figcaption {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: #555;
+}
+
+/* ------------------------------
+   Navigation Bar
+------------------------------ */
+header {
+  background-color: #F0F0F0;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #333333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #28A745;
+}
+
+/* ------------------------------
+   Section Layout
+------------------------------ */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Alternate section background for contrast */
+#about, #projects, #contact {
+  background-color: #F0F0F0;
+  border-radius: 10px;
+}
+
+/* Home Section */
+#home {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+#home .intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#home .intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* ------------------------------
+   About Section
+------------------------------ */
+#about .content {
+  margin-top: 1rem;
+}
+
+/* ------------------------------
+   Projects Section
+------------------------------ */
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-item {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-item h3 {
+  color: #007BFF;
+}
+
+/* ------------------------------
+   Reflections Section
+------------------------------ */
+#reflections {
+  background-color: #FFFFFF;
+}
+
+.blog-posts h3 {
+  color: #007BFF;
+}
+
+/* ------------------------------
+   Contact Section
+------------------------------ */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 600;
+  border: 2px solid #007BFF;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+  background-color: #28A745;
+  color: #FFFFFF;
+  border-color: #28A745;
+}
+
+/* ------------------------------
+   Footer (optional)
+------------------------------ */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #F0F0F0;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #home .intro h2 {
+    font-size: 1.6rem;
+  }
+
+  section {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+#clock {
+  position: static;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFA500;  /* Orange */
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(255, 165, 0, 0.6);
+  transition: all 0.3s ease;
 
