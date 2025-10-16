@@ -59,11 +59,12 @@ small, figcaption {
    Navigation Bar
 ------------------------------ */
 header {
-  background-color: #F0F0F0;
-  padding: 1rem 2rem;
+  background-color: #007BFF; /* Blue background */
+  padding: 0.8rem 2rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -74,28 +75,55 @@ nav {
   margin: 0 auto;
 }
 
+/* Name / Logo */
 nav h1 {
-  font-size: 1.8rem;
-  color: #333333;
+  font-size: 1.5rem; /* Smaller, cleaner heading */
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
+/* Navigation Menu */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem; /* horizontal spacing between items */
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #007BFF;
+  color: #FFFFFF;
   font-weight: 600;
-  transition: color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
-  color: #28A745;
+  color: #28A745; /* green hover highlight */
+  transform: scale(1.05);
 }
 
+/* Responsive: Stack items on small screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
 /* ------------------------------
    Section Layout
 ------------------------------ */
