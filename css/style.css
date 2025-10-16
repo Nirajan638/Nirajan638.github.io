@@ -234,13 +234,13 @@ footer {
 }
 
 #clock {
-    position: static;
-    margin: 10px 0;
-    text-align: left;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+  position: static;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFA500;  /* Orange */
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(255, 165, 0, 0.6);
+  transition: all 0.3s ease;
